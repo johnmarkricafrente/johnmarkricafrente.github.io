@@ -1,0 +1,153 @@
+﻿*{
+	margin: 0;
+	padding: 0;
+	font-family: Century Gothic;
+}
+
+ header{
+ 	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(images/bg.jpg);
+ 	height: 100vh;
+ 	background-size: cover;
+ 	background-position: center;
+ }
+
+ ul{
+ 	float: right;
+ 	list-style-type: none;
+ 	margin-top: 25px;
+ }
+
+ ul li{
+ 	display: inline-block;
+ }
+
+ ul li a{
+ 	font-family: optima;
+ 	font-size: 28px;
+ 	text-decoration: none;
+ 	color: white;
+ 	padding: 5px 20px;
+ 	overflow: hidden;
+ 	border: 1px solid white;
+ 	transition: 0.6s ease;
+ }
+
+ ul li a:hover{
+ 	background-color: cyan;
+ 	color: #000;
+ 	box-shadow: 0 0 10px cyan, 0 0 40px cyan, 0 0 80px cyan;
+ }
+
+ ul li.active a{
+ 	background-color: cyan;
+ 	color: #000;
+ 	box-shadow: 0 0 10px cyan, 0 0 40px cyan, 0 0 80px cyan;
+ }
+
+ .logo img{
+ 	float: left;
+ 	width: 170px;
+ 	height: 70px;
+ 	margin-top: 10px;
+ }
+
+ .main{
+ 	max-width: 1200px;
+ 	margin: auto;
+ }
+
+ .logo1 img{
+ 	float: left;
+ 	width: 170px;
+ 	height: 70px;
+ 	margin-top: 10px;
+ 	margin-left: 20%;
+ }
+
+ .main1{
+ 	max-width: 1200px;
+ 	margin: auto;
+ }
+
+ .name{
+ 	position: absolute;
+ 	top: 50%;
+ 	left: 50%;
+ 	transform: translate(-50%,-50%);
+ }
+
+ .name h1{
+ 	color: white;
+ 	font-size: 90px;
+ 	font-family: Courier New;
+ 	
+ }
+
+ .title{
+ 	position: absolute;
+ 	top: 65%;
+ 	left: 50%;
+ 	transform: translate(-50%,-50%);
+ }
+
+ .title h1{
+ 	color: cyan;
+ 	font-size: 53px;
+ 	font-family: Courier New;
+ 	margin: 0;
+ 	padding: 0;
+ 	color: transparent;
+ }
+
+ .title h1:before{
+ 	content: attr(data-text);
+ 	position: absolute;
+ 	top: 0;
+ 	left: 0;
+ 	width: 100%;
+ 	height: 50%;
+ 	color: cyan;
+ 	overflow: hidden;
+ 	border-right: 1px solid white;
+ 	animation: type 7s steps(22) infinite;
+ 	white-space: nowrap;
+ }
+
+ @keyframes type
+ {
+ 	0%
+ 	{
+ 		width: 0;
+ 	}
+ 	50%
+ 	{
+ 		width: 100%;
+ 	}
+ 	100%
+ 	{
+ 		width: 0;
+ 	}
+ }
+
+ .button{
+ 	position: absolute;
+ 	top: 70%;
+ 	left: 50%;
+ 	transform: translate(-50%,-50%);
+ }
+
+ .btn{
+ 	font-family: optima;
+ 	border: 2px solid #fff;
+ 	padding: 10px 30px;
+ 	color: white;
+ 	text-decoration: none;
+ 	overflow: hidden;
+ 	transition: 0.6s ease;
+ }
+
+ .btn:hover{
+ 	background-color: cyan;
+ 	color: #000;
+ 	box-shadow: 0 0 10px cyan, 0 0 40px cyan, 0 0 80px cyan;
+ }
